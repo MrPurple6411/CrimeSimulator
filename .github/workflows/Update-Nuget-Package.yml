@@ -86,7 +86,12 @@ jobs:
     - name: Publish to NuGet (if manual trigger)
       if: github.event_name == 'workflow_dispatch'
       run: |
-        dotnet nuget push "nupkg/*.nupkg" \
-          --api-key ${{ secrets.NUGET_API_KEY }} \
-          --source https://api.nuget.org/v3/index.json \
+        # Find the generated package file
+        PACKAGE_FILE=$(find nupkg -name "*.nupkg" | head -1)
+        echo "Publishing package: $PACKAGE_FILE"
+        
+        # Push to NuGet.org
+        dotnet nuget push "$PACKAGE_FILE" \
+          --api-key "${{ secrets.NUGET_API_KEY }}" \
+          --source "https://api.nuget.org/v3/index.json" \
           --skip-duplicate
