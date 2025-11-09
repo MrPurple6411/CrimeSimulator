@@ -186,7 +186,7 @@ On GitHub releases:
 
 Publicized game assemblies are packaged as:
 ```
-MrPurple6411.Crime Simulator.GameAssemblies
+MrPurple6411.CrimeSimulator.GameAssemblies
 ```
 
 This enables:
@@ -200,7 +200,7 @@ The build system automatically references the NuGet package in CI environments a
 
 ```xml
 <!-- Automatically handled by the build system -->
-<PackageReference Include="MrPurple6411.Crime Simulator.GameAssemblies" Version="1.0.0" PrivateAssets="all" Condition="'$(UseLocalGameAssemblies)' != 'true'" />
+<PackageReference Include="MrPurple6411.CrimeSimulator.GameAssemblies" Version="1.0.0" PrivateAssets="all" Condition="'$(UseLocalGameAssemblies)' != 'true'" />
 ```
 
 ## Processing Game Assemblies (Maintainers Only)

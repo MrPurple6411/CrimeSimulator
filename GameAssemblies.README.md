@@ -16,13 +16,13 @@ This package contains **publicized and stripped** game assemblies for **Crime Si
 Add to your `.csproj` file:
 
 ```xml
-<PackageReference Include="MrPurple6411.Crime Simulator.GameAssemblies" Version="1.0.0" PrivateAssets="all" />
+<PackageReference Include="MrPurple6411.CrimeSimulator.GameAssemblies" Version="1.0.0" PrivateAssets="all" />
 ```
 
 ### Via .NET CLI
 
 ```bash
-dotnet add package MrPurple6411.Crime Simulator.GameAssemblies
+dotnet add package MrPurple6411.CrimeSimulator.GameAssemblies
 ```
 
 ## 🛠️ Usage

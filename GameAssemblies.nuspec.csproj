@@ -3,7 +3,7 @@
   
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
-    <PackageId>MrPurple6411.Crime Simulator.GameAssemblies</PackageId>
+    <PackageId>MrPurple6411.CrimeSimulator.GameAssemblies</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Title>Crime Simulator Game Assemblies</Title>
     <Description>Publicized and stripped game assemblies for Crime Simulator mod development</Description>

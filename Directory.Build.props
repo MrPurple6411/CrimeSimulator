@@ -58,7 +58,7 @@
   
   <!-- BepInX Plugin Configuration -->
   <PropertyGroup>
-    <PluginGuid Condition="'$(PluginGuid)' == ''">MrPurple6411.Crime Simulator.$(MSBuildProjectName)</PluginGuid>
+    <PluginGuid Condition="'$(PluginGuid)' == ''">MrPurple6411.CrimeSimulator.$(MSBuildProjectName)</PluginGuid>
     <PluginName Condition="'$(PluginName)' == ''">$(MSBuildProjectName)</PluginName>
     <PluginVersion Condition="'$(PluginVersion)' == ''">1.0.0</PluginVersion>
   </PropertyGroup>
@@ -97,7 +97,7 @@
     <PackageReference Include="BepInEx.Core" Version="5.4.21" IncludeAssets="compile" PrivateAssets="all" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.1.0" PrivateAssets="all" />
     <PackageReference Include="UnityEngine.Modules" Version="2022.3.62" IncludeAssets="compile" PrivateAssets="all" />
-    <PackageReference Include="MrPurple6411.Crime Simulator.GameAssemblies" Version="*" IncludeAssets="compile" PrivateAssets="all" />
+    <PackageReference Include="MrPurple6411.CrimeSimulator.GameAssemblies" Version="*" IncludeAssets="compile" PrivateAssets="all" />
   </ItemGroup>
   
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
